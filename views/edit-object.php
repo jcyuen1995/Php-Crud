@@ -7,18 +7,18 @@
 
     foreach ($people as $i => $row):
         if ($row['id'] == $key):
-            $current = $row['object'];
+            $current = $row['people'];
         endif;
     endforeach;
 ?>
 <div class="container">
-    <h2><span class="fa fa-edit"></span>Edit <?php echo Sanitizer::escape_html($this_elephant->name) ?></a></h2>
+    <h2><span class="fa fa-edit"></span>Edit <?php echo Sanitizer::escape_html($current->name) ?></a></h2>
     <?php if (isset($_GET['edit']) && $_GET['edit'] == 'error'): ?>
     <div class="error"><span class="fa fa-exclaimation-triangle"></span> You Didn't fill the form out correctly.</div>
     <?php endif; ?>
 
     <form action="../controllers/routes.php?action=update" method="post">
-        <input type="hidden" name="id" value="<?php echo $id; ?>">
+        <input type="hidden" name="id" value="<?php echo $key; ?>">
 
         <label for="name">Name:</label>
         <input type="text" name="name" value="<?php echo $current->name; ?>" id="name">

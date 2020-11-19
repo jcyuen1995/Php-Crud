@@ -53,11 +53,11 @@ class PersonController {
         if(!empty($post['name']) && !empty($post['age']) && !empty($post['balance']) && !empty($post['image'])) {
 
             $person = new Person ($post);
-            $person = serialize(base64_encode($person));
+            $person = base64_encode(serialize($person));
 
             $database = Connector::get_instance();
             $pdo = $database->get_pdo();
-            $sql = "UPDATE `people` SET object = '${person}' WHERE id = '${key}'";
+            $sql = "UPDATE `people` SET people = '${person}' WHERE id = '${key}'";
             $query = $pdo->prepare($sql);
             
             if($query->execute()) {
