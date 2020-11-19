@@ -70,6 +70,7 @@ footer {
     background-color: slategrey;
     margin:0;
     text-align: center;
+    position: sticky;
     
 }
 
@@ -90,6 +91,10 @@ div.citizens {
     justify-content: space-evenly;
     align-items: center;
     width: 25%;
+}
+
+button.form-btn {
+    margin-top: 5%;
 }
 /* {
     outline: red 1px solid;

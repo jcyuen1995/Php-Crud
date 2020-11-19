@@ -61,7 +61,7 @@ class PersonController {
             $query = $pdo->prepare($sql);
             
             if($query->execute()) {
-                header('Location: ../views/index.php?add=success');
+                header('Location: ../views/index.php?update=success&key=' . $key);
                 exit();
             } else {
                 header('Location: ../views/index.php?db=failed');
