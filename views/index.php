@@ -9,7 +9,7 @@
     ?>
 
     <div class="container">
-        <h2 class="text-center"><span class="fa fa-eye"></span>View People</a></h2>
+        <h2 class="text-center"> People </h2>
         <?php if (isset($_GET['add']) && $_GET['add'] == 'success'): ?>
         <div class="alert alert-success"><span class="fa fa-check"></span>Successfully added <?php echo Sanitizer::format_name($added_name)?></div>
         <?php elseif (isset($_GET['update']) && $_GET['update'] == 'success'): ?>
@@ -36,11 +36,11 @@
             <img src="../views/img/<?php echo $person->image; ?>" alt="<?php echo $person->name; ?>">
 
             <form action="../controllers/routes.php?action=delete" method="post">
-                <a href="edit-object.php?id=<?php echo $id ?>" class="btn btn-success"><span class="fa fa-edit"></span> Edit</a>
+                <a href="edit-object.php?id=<?php echo $id ?>" class="btn btn-success"><span class="fa fa-edit"></span></a>
 
                 <input type="hidden" name="id" value="<?php echo $id; ?>">
 
-                <button type="submit" class ="btn btn-danger"><span class="fa-fa-trash"></span>Delete</button>
+                <button type="submit" class ="btn btn-danger"><i class="fas fa-trash"></i></button>
             </form>
         </div>
         <?php

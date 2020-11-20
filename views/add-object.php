@@ -1,18 +1,18 @@
 <!-- Add your objects here. You should rename this file. -->
 <?php require_once 'templates/header.tpl.php'; ?>
     <div class="container">
-        <h2><span class="fa fa-plus"></span>Add People</a></h2>
+        <h2><span class="fa fa-plus"></span>Add People</h2>
         <?php if (isset($_GET['add']) && $_GET['add'] == 'failed'): ?>
         <div class="alert alert-danger"><span class="fa fa-exclaimation-triangle"></span> You didn't fill the form out corretly. </div>
     <?php endif; ?>
 
     <form action="../controllers/routes.php?action=create" method="post">
         <div class = "form-group">
-            <label for="name">Name:</label>
-            <input type="text" name="name" value="" id="name" class = "form-control">
+            <label for = "name">Name:</label>
+            <input type = "text" name="name" value="" id="name" class = "form-control">
 
-            <label for="Age">Age:</label>
-            <input type="number" name="age" value="" id="age" class="form-control">
+            <label for = "age">Age:</label>
+            <input type = "number" name="age" value="" id="age" class="form-control">
 
             <label for="balance">Balance:</label>
             <input type="number" name="balance" value="" id="balance" class = "form-control">

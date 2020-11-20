@@ -12,7 +12,7 @@
     endforeach;
 ?>
 <div class="container">
-    <h2><span class="fa fa-edit"></span>Edit <?php echo Sanitizer::escape_html($current->name) ?></a></h2>
+    <h2><span class="fa fa-edit"></span>Edit <?php echo Sanitizer::escape_html($current->name) ?></h2>
     <?php if (isset($_GET['edit']) && $_GET['edit'] == 'error'): ?>
     <div class="alert alert-danger"><span class="fa fa-exclaimation-triangle"></span> You Didn't fill the form out correctly.</div>
     <?php endif; ?>
@@ -24,11 +24,11 @@
             <label for="name">Name:</label>
             <input class = "form-control" type="text" name="name" value="<?php echo $current->name; ?>" id="name">
 
-            <label for="Age">Age:</label>
+            <label for="age">Age:</label>
             <input class = "form-control" type="number" name="age" value="<?php echo $current->age; ?>" id="age">
 
-            <label for="Age">Balance</label>
-            <input class = "form-control" type="number" name="balance" value="<?php echo $current->age; ?>" id="age">
+            <label for="balance">Balance</label>
+            <input class = "form-control" type="number" name="balance" value="<?php echo $current->age; ?>" id="balance">
 
             <label for="image">Image:</label>
             <select class = "form-control" name="image" id="image">

@@ -20,10 +20,18 @@ header {
 h3 {
     text-align:center;
 }
+
+i.title  {
+
+    text-align: center;
+    text-decoration: underline;
+}
+
 h1.title{
 
     margin: 0 0 ;
     padding: 3%;
+    width: 100%
 }
 
 nav ul{

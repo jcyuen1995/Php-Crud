@@ -22,7 +22,7 @@
         </header>
     <nav>
         <ul>
-            <li><a href="index.php" class = "btn btn-info"><span class="fa fa-eye"></span>View People</a></li>
-            <li><a href="add-object.php"class = "btn btn-info"><span class="fa fa-plus"></span> Add People</a></li>
+            <li><a href="index.php" class = "btn btn-info"><span class="fa fa-eye"></span></a></li>
+            <li><a href="add-object.php" class = "btn btn-info"><i class="fas fa-user-plus"></i></a></li>
         </ul>
     </nav>
