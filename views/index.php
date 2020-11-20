@@ -32,7 +32,7 @@
         <div class="citizens">
             <h2><?php echo Sanitizer::escape_html($person->name); ?></h2>
             <h3>Age: <?php echo Sanitizer::escape_html($person->age); ?></h3>
-            <h3>Balance: <?php echo Sanitizer::escape_html($person->balance); ?></h3>
+            <h3>Balance:$<?php echo Sanitizer::escape_html($person->balance); ?></h3>
             <img src="../views/img/<?php echo $person->image; ?>" alt="<?php echo $person->name; ?>">
 
             <form action="../controllers/routes.php?action=delete" method="post">
